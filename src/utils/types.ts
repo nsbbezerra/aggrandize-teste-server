@@ -1,17 +1,3 @@
-interface CategoryOptionsProps {
-  category:
-    | "tops"
-    | "womens-dresses"
-    | "womens-shoes"
-    | "mens-shirts"
-    | "mens-shoes"
-    | "mens-watches"
-    | "womens-watches"
-    | "womens-bags"
-    | "womens-jewellery"
-    | "sunglasses";
-}
-
 interface ProductsProps {
   id: number;
   title: string;
@@ -40,4 +26,4 @@ interface ProductsFilterProps {
   products: ProductsProps[];
 }
 
-export type { ProductsProps, CategoryOptionsProps, ProductsFilterProps };
+export type { ProductsProps, ProductsFilterProps };
