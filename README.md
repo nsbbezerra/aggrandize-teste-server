@@ -31,7 +31,7 @@ Foram aplicados os seguintes filtros aos produtos listados:
 
 ## 3 - Respostas do Servidor
 
-- Respostar com sucesso `Status 200`. Ex:
+- Respostas com sucesso `Status 200`. Ex:
 
 ```json
 [
@@ -55,7 +55,7 @@ Foram aplicados os seguintes filtros aos produtos listados:
 ]
 ```
 
-- Respostar com erro `Status 400`. Ex:
+- Respostas com erro `Status 400`. Ex:
 
 ```json
 {
