@@ -29,7 +29,42 @@ Foram aplicados os seguintes filtros aos produtos listados:
 - Selecionado apenas items de vestuário, calçados e acessórios de moda
 - Sapatos masculinos ou femininos são mostrados os que possuem desconto inferior ou igual a 15%
 
-## 3 - Build:
+## 3 - Respostas do Servidor
+
+- Respostar com sucesso `Status 200`. Ex:
+
+```json
+[
+  {
+    "id": 1,
+    "title": "Product Title",
+    "description": "Description of product",
+    "price": 10.5,
+    "discountPercentage": 6.5,
+    "rating": 4.95,
+    "stock": 100,
+    "brand": "Brand of product",
+    "category": "Category name",
+    "thumbnail": "https://thumbnail.com/thumbnail.png",
+    "images": [
+      "https://thumbnail.com/thumbnail.png",
+      "https://thumbnail.com/thumbnail.png",
+      "https://thumbnail.com/thumbnail.png"
+    ]
+  }
+]
+```
+
+- Respostar com erro `Status 400`. Ex:
+
+```json
+{
+  "defaultMessage": "An error occurred while processing your request",
+  "errorMessage": "Message of error"
+}
+```
+
+## 4 - Build:
 
 - Execute o comando para gerar a versão de producão:
 
