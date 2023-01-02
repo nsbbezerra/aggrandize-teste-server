@@ -1,10 +1,10 @@
 import { ProductsFilterProps, ProductsProps } from "./types";
 
-function productsFilter(products: ProductsFilterProps[]) {
+function productsFilter(data: ProductsFilterProps[]) {
   let allProducts: ProductsProps[] = [];
 
-  products.map((productList) => {
-    productList.products.map((product) => {
+  data.map((products) => {
+    products.products.map((product) => {
       if (product.stock >= 10) {
         product.category.includes("shoes")
           ? product.discountPercentage <= 15 && allProducts.push(product)
@@ -12,6 +12,7 @@ function productsFilter(products: ProductsFilterProps[]) {
       }
     });
   });
+
   return allProducts;
 }
 
