@@ -20,23 +20,6 @@ class ProductsController {
       next(error);
     }
   }
-
-  async Find(
-    request: Request<{ id: string }, {}, {}>,
-    response: Response,
-    next: NextFunction
-  ) {
-    const { id } = request.params;
-
-    try {
-      const data = await fetch(`${configs.FETCHER_ENDPOINT}/${id}`);
-      const product = await data.json();
-
-      return response.status(200).json(product);
-    } catch (error) {
-      next(error);
-    }
-  }
 }
 
 export default new ProductsController();
