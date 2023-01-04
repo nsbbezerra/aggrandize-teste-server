@@ -90,6 +90,8 @@ yarn start
 - [Express](https://expressjs.com/pt-br/)
 - [Cors](https://github.com/expressjs/cors)
 
+> Algumas funcionalidades ou métodos não são compatíveis com versões anteriores à 18 do `NODE JS`.
+
 ## Autor
 
 [<img src="https://avatars.githubusercontent.com/u/44842023?s=400&u=2a8f0844c691b0d32eb0d243edc8eebf226f5b5f&v=4" width=115><br><sub>Natanael Bezerra</sub>](https://github.com/nsbbezerra)
